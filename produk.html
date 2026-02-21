@@ -1,36 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judul Halaman</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produk - Jokopit Farm</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #1b5e20;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* SECTION PRODUK */
+.produk {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.produk h2 {
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.harga {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+</style>
+
 </head>
 <body>
 
-<h2>Produk Kami</h2>
+<header>
+  <h1>JOKOPIT FARM</h1>
+  <p>Ternak Sehat, Panen Berkah</p>
+</header>
 
-<div class="produk">
-  <h3>🐄 Sapi Sehat</h3>
-  <p>Berat ±600 kg | Sehat</p>
-</div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="produk.html">Produk</a>
+  <a href="tentang.html">Tentang</a>
+  <a href="kontak.html">Kontak</a>
+</nav>
 
-<div class="produk">
-  <h3>🐐 Kambing Sehat</h3>
-  <p>Berat ±40 kg</p>
-</div>
+<section class="produk">
+  <h2>Produk Kami</h2>
 
-<div class="produk">
-  <h3>🐟 Ikan Sehat</h3>
-  <p>Harga per kg</p>
-</div>
+  <div class="grid">
 
-<div class="produk">
-  <h3>🐟 daun talas</h3>
-  <p>Harga per kg</p>
-</div>
-    
+    <!-- SAPI -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb" alt="Sapi">
+      <h3>Sapi Potong</h3>
+      <p class="harga">Rp 18.000.000 / ekor</p>
+      <a href="https://wa.me/628122780949?text=Saya%20ingin%20pesan%20Sapi%20Potong" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <!-- KAMBING -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581888227599-779811939961" alt="Kambing">
+      <h3>Kambing Etawa</h3>
+      <p class="harga">Rp 3.500.000 / ekor</p>
+      <a href="https://wa.me/628122780949?text=Saya%20ingin%20pesan%20Kambing%20Etawa" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <!-- IKAN -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516685018646-549d6aaf29a9" alt="Ikan">
+      <h3>Ikan Segar</h3>
+      <p class="harga">Rp 25.000 / kg</p>
+      <a href="https://wa.me/628122780949?text=Saya%20ingin%20pesan%20Ikan%20Segar" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <!-- TALAS -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/07/31/11/44/taro-2553131_1280.jpg" alt="Talas">
+      <h3>Talas Pratama</h3>
+      <p class="harga">Rp 10.000 / kg</p>
+      <a href="https://wa.me/628122780949?text=Saya%20ingin%20pesan%20Talas%20Pratama" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <!-- DAUN TALAS -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514982841-6e5f4fbd33c3" alt="Daun Talas">
+      <h3>Daun Talas Segar</h3>
+      <p class="harga">Rp 5.000 / ikat</p>
+      <a href="https://wa.me/628122780949?text=Saya%20ingin%20pesan%20Daun%20Talas" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 JOKOPIT FARM</p>
+</footer>
+
 </body>
 </html>
-
-
