@@ -185,3 +185,36 @@ button {
         height: 80vh;
     }
 }
+/* ================= WHATSAPP BUTTON ================= */
+
+.wa-btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.btn {
+    padding: 12px 28px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1ebe5d;
+}
